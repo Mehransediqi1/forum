@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Lägg till elev</title>
+</head>
+<body>
+    <h1>Lägg till elev</h1>
+
+    <form method="POST" action="/write">
+        <label>Förnamn:</label><br>
+        <input type="text" name="fornamn" required><br><br>
+
+        <label>Efternamn:</label><br>
+        <input type="text" name="efternamn" required><br><br>
+
+        <label>Klass:</label><br>
+        <input type="text" name="klass" required><br><br>
+
+        <button type="submit">Spara</button>
+    </form>
+
+    <br>
+    <a href="/read">Tillbaka</a>
+</body>
+</html>

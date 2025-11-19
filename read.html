@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista över elever</title>
+</head>
+<body>
+    <h1>Elever i databasen</h1>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Förnamn</th>
+            <th>Efternamn</th>
+            <th>Klass</th>
+        </tr>
+
+        {% for s in students %}
+        <tr>
+            <td>{{ s.id }}</td>
+            <td>{{ s.fornamn }}</td>
+            <td>{{ s.efternamn }}</td>
+            <td>{{ s.klass }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/write">Lägg till elev</a>
+</body>
+</html>

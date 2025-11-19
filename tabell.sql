@@ -1,0 +1,9 @@
+CREATE DATABASE test;
+USE test;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fornamn VARCHAR(50) NOT NULL,
+    efternamn VARCHAR(100) NOT NULL,
+    klass VARCHAR(5) NOT NULL
+);
